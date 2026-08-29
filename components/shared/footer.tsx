@@ -17,13 +17,13 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-zinc-950 text-white border-t border-amber-500/20 pt-16 pb-12">
+    <footer className="bg-zinc-950 text-white border-t border-rose-600/20 pt-16 pb-12">
       <div className="max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-zinc-900">
           {/* Brand Info */}
           <div className="space-y-4 md:col-span-1">
             <Link href="/" className="flex items-center space-x-3">
-              <div className="w-9 h-9 rounded-full bg-amber-400 flex items-center justify-center text-zinc-950 font-black text-lg">
+              <div className="w-9 h-9 rounded-full bg-rose-700 flex items-center justify-center text-white font-black text-lg">
                 C
               </div>
               <span className="text-xl font-bold tracking-tight text-zinc-100">
@@ -39,7 +39,7 @@ export function Footer() {
               <a
                 href="#"
                 aria-label="Instagram"
-                className="w-8 h-8 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-amber-400 hover:border-amber-400/40 transition-colors"
+                className="w-8 h-8 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-rose-400 hover:border-rose-400/40 transition-colors"
               >
                 <svg
                   className="w-4 h-4"
@@ -60,7 +60,7 @@ export function Footer() {
               <a
                 href="#"
                 aria-label="Facebook"
-                className="w-8 h-8 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-amber-400 hover:border-amber-400/40 transition-colors"
+                className="w-8 h-8 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-rose-400 hover:border-rose-400/40 transition-colors"
               >
                 <svg
                   className="w-4 h-4"
@@ -79,7 +79,7 @@ export function Footer() {
               <a
                 href="#"
                 aria-label="X (Twitter)"
-                className="w-8 h-8 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-amber-400 hover:border-amber-400/40 transition-colors"
+                className="w-8 h-8 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-rose-400 hover:border-rose-400/40 transition-colors"
               >
                 <svg
                   className="w-4 h-4"
@@ -94,7 +94,7 @@ export function Footer() {
 
           {/* Navigation Links */}
           <div>
-            <h3 className="text-amber-400 text-xs font-bold uppercase tracking-widest mb-4">
+            <h3 className="text-rose-400 text-xs font-bold uppercase tracking-widest mb-4">
               Quick Links
             </h3>
             <ul className="space-y-2.5 text-xs text-zinc-400 font-medium">
@@ -102,7 +102,7 @@ export function Footer() {
                 <a
                   href="#menu"
                   onClick={(e) => scrollToSection(e, "menu")}
-                  className="hover:text-amber-400 transition-colors"
+                  className="hover:text-rose-400 transition-colors"
                 >
                   Digital Menu
                 </a>
@@ -111,7 +111,7 @@ export function Footer() {
                 <a
                   href="#reserve"
                   onClick={(e) => scrollToSection(e, "reserve")}
-                  className="hover:text-amber-400 transition-colors"
+                  className="hover:text-rose-400 transition-colors"
                 >
                   Table Reservations
                 </a>
@@ -120,7 +120,7 @@ export function Footer() {
                 <a
                   href="#boardroom"
                   onClick={(e) => scrollToSection(e, "boardroom")}
-                  className="hover:text-amber-400 transition-colors"
+                  className="hover:text-rose-400 transition-colors"
                 >
                   Boardroom Suites
                 </a>
@@ -129,7 +129,7 @@ export function Footer() {
                 <a
                   href="#about"
                   onClick={(e) => scrollToSection(e, "about")}
-                  className="hover:text-amber-400 transition-colors"
+                  className="hover:text-rose-400 transition-colors"
                 >
                   About Us
                 </a>
@@ -139,20 +139,20 @@ export function Footer() {
 
           {/* Contact Details */}
           <div>
-            <h3 className="text-amber-400 text-xs font-bold uppercase tracking-widest mb-4">
+            <h3 className="text-rose-400 text-xs font-bold uppercase tracking-widest mb-4">
               Location & Hours
             </h3>
             <ul className="space-y-3 text-xs text-zinc-400">
               <li className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+                <MapPin className="w-4 h-4 text-rose-400 shrink-0 mt-0.5" />
                 <span>Financial District Ave, Suite 400</span>
               </li>
               <li className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-amber-400 shrink-0" />
+                <Phone className="w-4 h-4 text-rose-400 shrink-0" />
                 <span>+254 700 000 000</span>
               </li>
               <li className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-amber-400 shrink-0" />
+                <Mail className="w-4 h-4 text-rose-400 shrink-0" />
                 <span>concierge@cafe.com</span>
               </li>
               <li className="pt-1 text-zinc-500">
@@ -174,7 +174,7 @@ export function Footer() {
             <a
               href="#reserve"
               onClick={(e) => scrollToSection(e, "reserve")}
-              className="w-full flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-300 text-zinc-950 font-bold px-4 py-2.5 rounded-lg text-xs transition-colors shadow-md"
+              className="w-full flex items-center justify-center gap-2 bg-rose-700 hover:bg-rose-600 text-white font-bold px-4 py-2.5 rounded-lg text-xs transition-colors shadow-md"
             >
               <Calendar className="w-3.5 h-3.5" />
               Book Now

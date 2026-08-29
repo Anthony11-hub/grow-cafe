@@ -16,7 +16,7 @@ export function Hero() {
   };
 
   return (
-    <section className="relative bg-zinc-950 text-white min-h-[620px] flex items-center py-24 overflow-hidden border-b border-amber-500/10">
+    <section className="relative bg-zinc-950 text-white min-h-[620px] flex items-center py-24 overflow-hidden border-b border-rose-600/10">
       {/* Background Image with Dark Vignette Overlay */}
       <div
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-40"
@@ -30,14 +30,14 @@ export function Hero() {
       {/* Hero Content Container */}
       <div className="relative z-10 max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="max-w-2xl space-y-6">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-400/30 text-amber-400 text-xs font-semibold tracking-wider uppercase">
-            <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-rose-600/10 border border-rose-400/30 text-rose-400 text-xs font-semibold tracking-wider uppercase">
+            <span className="w-2 h-2 rounded-full bg-rose-400 animate-pulse" />
             Executive Dining & Workspaces
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-zinc-100 leading-tight">
             A Table, a Meal, or a Boardroom—
-            <span className="block text-amber-400">Booked in Seconds.</span>
+            <span className="block text-rose-400">Booked in Seconds.</span>
           </h1>
 
           <p className="text-lg sm:text-xl text-zinc-300 font-normal leading-relaxed">
@@ -50,7 +50,7 @@ export function Hero() {
             <a
               href="#reserve"
               onClick={(e) => scrollToSection(e, "reserve")}
-              className="bg-amber-400 hover:bg-amber-300 text-zinc-950 font-bold px-7 py-3.5 rounded-lg text-center transition-all duration-200 shadow-lg hover:shadow-amber-400/20 text-base flex items-center justify-center gap-2"
+              className="bg-rose-700 hover:bg-rose-600 text-white font-bold px-7 py-3.5 rounded-lg text-center transition-all duration-200 shadow-lg hover:shadow-rose-600/20 text-base flex items-center justify-center gap-2"
             >
               <Utensils className="w-5 h-5" />
               Reserve a Table
@@ -58,7 +58,7 @@ export function Hero() {
             <a
               href="#boardroom"
               onClick={(e) => scrollToSection(e, "boardroom")}
-              className="bg-zinc-900/80 hover:bg-zinc-800 text-amber-400 border border-amber-400/40 font-semibold px-7 py-3.5 rounded-lg text-center transition-colors text-base flex items-center justify-center gap-2"
+              className="bg-zinc-900/80 hover:bg-zinc-800 text-rose-400 border border-rose-400/40 font-semibold px-7 py-3.5 rounded-lg text-center transition-colors text-base flex items-center justify-center gap-2"
             >
               <Briefcase className="w-5 h-5" />
               Book a Room

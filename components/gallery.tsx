@@ -27,14 +27,14 @@ const galleryImages = [
 
 export function Gallery() {
   return (
-    <section className="py-20 bg-zinc-950 text-white border-b border-amber-500/10">
+    <section className="py-20 bg-zinc-950 text-white border-b border-rose-600/10">
       <div className="max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-400/30 text-amber-400 text-xs font-semibold tracking-wider uppercase mb-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-600/10 border border-rose-400/30 text-rose-400 text-xs font-semibold tracking-wider uppercase mb-3">
             Visual Experience
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-100">
-            Inside <span className="text-amber-400">Café</span>
+            Inside <span className="text-rose-400">Café</span>
           </h2>
         </div>
 
@@ -42,7 +42,7 @@ export function Gallery() {
           {galleryImages.map((img, index) => (
             <div
               key={index}
-              className="group relative h-72 rounded-xl overflow-hidden border border-zinc-800 hover:border-amber-400/50 transition-all duration-300 shadow-xl"
+              className="group relative h-72 rounded-xl overflow-hidden border border-zinc-800 hover:border-rose-400/50 transition-all duration-300 shadow-xl"
             >
               <img
                 src={img.url}
@@ -52,7 +52,7 @@ export function Gallery() {
               <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity" />
 
               <div className="absolute bottom-4 left-4 right-4">
-                <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest bg-zinc-950/80 px-2 py-0.5 rounded border border-amber-400/30 inline-block mb-1">
+                <span className="text-[10px] font-bold text-rose-400 uppercase tracking-widest bg-zinc-950/80 px-2 py-0.5 rounded border border-rose-400/30 inline-block mb-1">
                   {img.tag}
                 </span>
                 <h3 className="text-base font-bold text-zinc-100">

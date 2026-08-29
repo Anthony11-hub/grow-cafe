@@ -7,20 +7,20 @@ export function Boardroom() {
   return (
     <section
       id="boardroom"
-      className="py-24 bg-zinc-900 text-white border-b border-amber-500/10 relative overflow-hidden"
+      className="py-24 bg-zinc-900 text-white border-b border-rose-600/10 relative overflow-hidden"
     >
       {/* Glow highlight effect behind section */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-amber-500/5 blur-3xl rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-rose-600/5 blur-3xl rounded-full pointer-events-none" />
 
       <div className="relative max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top Header */}
         <div className="max-w-2xl mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-400/30 text-amber-400 text-xs font-semibold tracking-wider uppercase mb-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-600/10 border border-rose-400/30 text-rose-400 text-xs font-semibold tracking-wider uppercase mb-3">
             Corporate & Executive Spaces
           </div>
           <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-zinc-100">
             Private Boardrooms &{" "}
-            <span className="text-amber-400">Meeting Suites</span>
+            <span className="text-rose-400">Meeting Suites</span>
           </h2>
           <p className="text-zinc-300 text-base sm:text-lg mt-4 leading-relaxed">
             Elevate your pitch, board meeting, or team strategy session. Fully
@@ -33,7 +33,7 @@ export function Boardroom() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           {/* Main Visual showcase (7 Cols) */}
           <div className="lg:col-span-7 space-y-4">
-            <div className="relative h-[380px] sm:h-[440px] rounded-2xl overflow-hidden border border-amber-400/30 shadow-2xl">
+            <div className="relative h-[380px] sm:h-[440px] rounded-2xl overflow-hidden border border-rose-400/30 shadow-2xl">
               <img
                 src="https://images.unsplash.com/photo-1517502884422-41eaead166d4?auto=format&fit=crop&w=1200&q=80"
                 alt="Executive Boardroom Suite"
@@ -43,14 +43,14 @@ export function Boardroom() {
 
               <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between">
                 <div>
-                  <span className="text-amber-400 text-xs font-bold uppercase tracking-widest">
+                  <span className="text-rose-400 text-xs font-bold uppercase tracking-widest">
                     Suite A — Executive Suite
                   </span>
                   <h3 className="text-xl font-bold text-white">
                     Capacity: Up to 16 People
                   </h3>
                 </div>
-                <span className="bg-zinc-950/90 text-amber-400 border border-amber-400/40 px-3.5 py-1.5 rounded-lg text-sm font-bold">
+                <span className="bg-zinc-950/90 text-rose-400 border border-rose-400/40 px-3.5 py-1.5 rounded-lg text-sm font-bold">
                   From $45/hr
                 </span>
               </div>
@@ -65,7 +65,7 @@ export function Boardroom() {
 
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <div className="w-8 h-8 rounded-lg bg-amber-400/10 border border-amber-400/30 flex items-center justify-center text-amber-400 shrink-0">
+                <div className="w-8 h-8 rounded-lg bg-rose-400/10 border border-rose-400/30 flex items-center justify-center text-rose-400 shrink-0">
                   <Monitor className="w-4 h-4" />
                 </div>
                 <div>
@@ -79,7 +79,7 @@ export function Boardroom() {
               </div>
 
               <div className="flex items-start gap-3">
-                <div className="w-8 h-8 rounded-lg bg-amber-400/10 border border-amber-400/30 flex items-center justify-center text-amber-400 shrink-0">
+                <div className="w-8 h-8 rounded-lg bg-rose-400/10 border border-rose-400/30 flex items-center justify-center text-rose-400 shrink-0">
                   <Wifi className="w-4 h-4" />
                 </div>
                 <div>
@@ -93,7 +93,7 @@ export function Boardroom() {
               </div>
 
               <div className="flex items-start gap-3">
-                <div className="w-8 h-8 rounded-lg bg-amber-400/10 border border-amber-400/30 flex items-center justify-center text-amber-400 shrink-0">
+                <div className="w-8 h-8 rounded-lg bg-rose-400/10 border border-rose-400/30 flex items-center justify-center text-rose-400 shrink-0">
                   <Coffee className="w-4 h-4" />
                 </div>
                 <div>
@@ -108,7 +108,7 @@ export function Boardroom() {
               </div>
 
               <div className="flex items-start gap-3">
-                <div className="w-8 h-8 rounded-lg bg-amber-400/10 border border-amber-400/30 flex items-center justify-center text-amber-400 shrink-0">
+                <div className="w-8 h-8 rounded-lg bg-rose-400/10 border border-rose-400/30 flex items-center justify-center text-rose-400 shrink-0">
                   <Shield className="w-4 h-4" />
                 </div>
                 <div>
@@ -124,7 +124,7 @@ export function Boardroom() {
 
             <a
               href="#reserve"
-              className="w-full flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-300 text-zinc-950 font-bold px-5 py-3.5 rounded-lg transition-colors text-sm shadow-md"
+              className="w-full flex items-center justify-center gap-2 bg-rose-700 hover:bg-rose-600 text-white font-bold px-5 py-3.5 rounded-lg transition-colors text-sm shadow-md"
             >
               Book Boardroom Space
               <ArrowRight className="w-4 h-4" />

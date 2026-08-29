@@ -14,16 +14,16 @@ export function TableReservations() {
   return (
     <section
       id="reserve"
-      className="py-20 bg-zinc-950 text-white border-b border-amber-500/10"
+      className="py-20 bg-zinc-950 text-white border-b border-rose-600/10"
     >
       <div className="max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-10">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-400/30 text-amber-400 text-xs font-semibold tracking-wider uppercase mb-3">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-600/10 border border-rose-400/30 text-rose-400 text-xs font-semibold tracking-wider uppercase mb-3">
               Instant Booking
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-100">
-              Reserve Your <span className="text-amber-400">Table</span>
+              Reserve Your <span className="text-rose-400">Table</span>
             </h2>
             <p className="text-zinc-400 text-sm sm:text-base mt-2">
               For dining, casual catchups, or light meetings. Confirmation is
@@ -31,10 +31,10 @@ export function TableReservations() {
             </p>
           </div>
 
-          <div className="bg-zinc-900 border border-amber-500/20 rounded-2xl p-6 sm:p-10 shadow-2xl">
+          <div className="bg-zinc-900 border border-rose-600/20 rounded-2xl p-6 sm:p-10 shadow-2xl">
             {submitted ? (
               <div className="text-center py-8 space-y-4">
-                <div className="w-16 h-16 rounded-full bg-amber-400/10 border border-amber-400/40 text-amber-400 flex items-center justify-center mx-auto">
+                <div className="w-16 h-16 rounded-full bg-rose-400/10 border border-rose-400/40 text-rose-400 flex items-center justify-center mx-auto">
                   <CheckCircle2 className="w-8 h-8" />
                 </div>
                 <h3 className="text-2xl font-bold text-zinc-100">
@@ -46,7 +46,7 @@ export function TableReservations() {
                 </p>
                 <button
                   onClick={() => setSubmitted(false)}
-                  className="mt-4 bg-zinc-800 hover:bg-zinc-700 text-amber-400 px-6 py-2.5 rounded-lg text-sm font-semibold transition-colors"
+                  className="mt-4 bg-zinc-800 hover:bg-zinc-700 text-rose-400 px-6 py-2.5 rounded-lg text-sm font-semibold transition-colors"
                 >
                   Make Another Reservation
                 </button>
@@ -57,12 +57,12 @@ export function TableReservations() {
                   {/* Guests */}
                   <div>
                     <label className="block text-xs uppercase tracking-wider text-zinc-400 font-semibold mb-2 flex items-center gap-1.5">
-                      <Users className="w-3.5 h-3.5 text-amber-400" /> Party
+                      <Users className="w-3.5 h-3.5 text-rose-400" /> Party
                       Size
                     </label>
                     <select
                       required
-                      className="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3.5 py-3 text-zinc-100 focus:outline-none focus:border-amber-400 text-sm"
+                      className="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3.5 py-3 text-zinc-100 focus:outline-none focus:border-rose-400 text-sm"
                     >
                       <option value="2">2 Guests</option>
                       <option value="4">4 Guests</option>
@@ -74,23 +74,23 @@ export function TableReservations() {
                   {/* Date */}
                   <div>
                     <label className="block text-xs uppercase tracking-wider text-zinc-400 font-semibold mb-2 flex items-center gap-1.5">
-                      <Calendar className="w-3.5 h-3.5 text-amber-400" /> Date
+                      <Calendar className="w-3.5 h-3.5 text-rose-400" /> Date
                     </label>
                     <input
                       type="date"
                       required
-                      className="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3.5 py-3 text-zinc-100 focus:outline-none focus:border-amber-400 text-sm"
+                      className="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3.5 py-3 text-zinc-100 focus:outline-none focus:border-rose-400 text-sm"
                     />
                   </div>
 
                   {/* Time */}
                   <div>
                     <label className="block text-xs uppercase tracking-wider text-zinc-400 font-semibold mb-2 flex items-center gap-1.5">
-                      <Clock className="w-3.5 h-3.5 text-amber-400" /> Time
+                      <Clock className="w-3.5 h-3.5 text-rose-400" /> Time
                     </label>
                     <select
                       required
-                      className="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3.5 py-3 text-zinc-100 focus:outline-none focus:border-amber-400 text-sm"
+                      className="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3.5 py-3 text-zinc-100 focus:outline-none focus:border-rose-400 text-sm"
                     >
                       <option value="08:00">08:00 AM</option>
                       <option value="12:00">12:00 PM</option>
@@ -111,7 +111,7 @@ export function TableReservations() {
                       type="text"
                       required
                       placeholder="Jane Doe"
-                      className="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3.5 py-3 text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-amber-400 text-sm"
+                      className="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3.5 py-3 text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-rose-400 text-sm"
                     />
                   </div>
                   <div>
@@ -122,14 +122,14 @@ export function TableReservations() {
                       type="tel"
                       required
                       placeholder="+254 700 000 000"
-                      className="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3.5 py-3 text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-amber-400 text-sm"
+                      className="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3.5 py-3 text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-rose-400 text-sm"
                     />
                   </div>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-amber-400 hover:bg-amber-300 text-zinc-950 font-bold py-3.5 rounded-lg text-base transition-colors shadow-lg shadow-amber-400/10"
+                  className="w-full bg-rose-700 hover:bg-rose-600 text-white font-bold py-3.5 rounded-lg text-base transition-colors shadow-lg shadow-rose-700/20"
                 >
                   Confirm Table Booking
                 </button>

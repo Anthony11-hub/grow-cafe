@@ -28,16 +28,16 @@ export function Testimonials() {
   return (
     <section
       id="reviews"
-      className="py-20 bg-zinc-900 text-white border-b border-amber-500/10"
+      className="py-20 bg-zinc-900 text-white border-b border-rose-600/10"
     >
       <div className="max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-400/30 text-amber-400 text-xs font-semibold tracking-wider uppercase mb-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-600/10 border border-rose-400/30 text-rose-400 text-xs font-semibold tracking-wider uppercase mb-3">
             Guest Feedback
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-100">
             Trusted by{" "}
-            <span className="text-amber-400">Executives & Foodies</span>
+            <span className="text-rose-400">Executives & Foodies</span>
           </h2>
         </div>
 
@@ -45,12 +45,12 @@ export function Testimonials() {
           {reviews.map((rev, idx) => (
             <div
               key={idx}
-              className="bg-zinc-950 border border-zinc-800 hover:border-amber-400/30 p-6 rounded-2xl flex flex-col justify-between transition-all"
+              className="bg-zinc-950 border border-zinc-800 hover:border-rose-400/30 p-6 rounded-2xl flex flex-col justify-between transition-all"
             >
               <div className="space-y-4">
-                <div className="flex gap-1 text-amber-400">
+                <div className="flex gap-1 text-rose-400">
                   {[...Array(rev.rating)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-amber-400" />
+                    <Star key={i} className="w-4 h-4 fill-rose-400" />
                   ))}
                 </div>
                 <p className="text-zinc-300 text-sm leading-relaxed italic">
@@ -60,7 +60,7 @@ export function Testimonials() {
 
               <div className="pt-6 border-t border-zinc-900 mt-6">
                 <h3 className="font-bold text-zinc-100 text-sm">{rev.name}</h3>
-                <p className="text-xs text-amber-400/80 font-medium">
+                <p className="text-xs text-rose-400/80 font-medium">
                   {rev.role}
                 </p>
               </div>

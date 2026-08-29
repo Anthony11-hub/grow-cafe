@@ -69,24 +69,24 @@ export function MenuPreview() {
   return (
     <section
       id="menu"
-      className="py-20 bg-zinc-900 text-white border-b border-amber-500/10"
+      className="py-20 bg-zinc-900 text-white border-b border-rose-600/10"
     >
       <div className="max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-400/30 text-amber-400 text-xs font-semibold tracking-wider uppercase mb-3">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-600/10 border border-rose-400/30 text-rose-400 text-xs font-semibold tracking-wider uppercase mb-3">
               Curated Menu
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-100">
               Crafted Flavors &{" "}
-              <span className="text-amber-400">Signature Beverages</span>
+              <span className="text-rose-400">Signature Beverages</span>
             </h2>
           </div>
 
           <a
             href="#order-flow"
-            className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-300 text-zinc-950 font-semibold px-5 py-2.5 rounded-lg transition-colors text-sm shrink-0 self-start md:self-auto"
+            className="inline-flex items-center gap-2 bg-rose-700 hover:bg-rose-600 text-white font-semibold px-5 py-2.5 rounded-lg transition-colors text-sm shrink-0 self-start md:self-auto"
           >
             <ShoppingBag className="w-4 h-4" />
             Full Order Menu
@@ -100,7 +100,7 @@ export function MenuPreview() {
             onClick={() => setActiveTab("coffee")}
             className={`flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm transition-all whitespace-nowrap ${
               activeTab === "coffee"
-                ? "bg-amber-400 text-zinc-950 shadow-md font-semibold"
+                ? "bg-rose-700 text-white shadow-md font-semibold"
                 : "text-zinc-400 hover:text-zinc-100 hover:bg-zinc-800"
             }`}
           >
@@ -112,7 +112,7 @@ export function MenuPreview() {
             onClick={() => setActiveTab("mains")}
             className={`flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm transition-all whitespace-nowrap ${
               activeTab === "mains"
-                ? "bg-amber-400 text-zinc-950 shadow-md font-semibold"
+                ? "bg-rose-700 text-white shadow-md font-semibold"
                 : "text-zinc-400 hover:text-zinc-100 hover:bg-zinc-800"
             }`}
           >
@@ -124,7 +124,7 @@ export function MenuPreview() {
             onClick={() => setActiveTab("desserts")}
             className={`flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm transition-all whitespace-nowrap ${
               activeTab === "desserts"
-                ? "bg-amber-400 text-zinc-950 shadow-md font-semibold"
+                ? "bg-rose-700 text-white shadow-md font-semibold"
                 : "text-zinc-400 hover:text-zinc-100 hover:bg-zinc-800"
             }`}
           >
@@ -138,14 +138,14 @@ export function MenuPreview() {
           {filteredItems.map((item, idx) => (
             <div
               key={idx}
-              className="p-6 rounded-xl bg-zinc-950 border border-zinc-800 hover:border-amber-400/40 transition-all duration-200 flex flex-col justify-between group"
+              className="p-6 rounded-xl bg-zinc-950 border border-zinc-800 hover:border-rose-400/40 transition-all duration-200 flex flex-col justify-between group"
             >
               <div>
                 <div className="flex items-start justify-between gap-4 mb-2">
-                  <h3 className="font-bold text-zinc-100 text-lg group-hover:text-amber-400 transition-colors">
+                  <h3 className="font-bold text-zinc-100 text-lg group-hover:text-rose-400 transition-colors">
                     {item.name}
                   </h3>
-                  <span className="font-bold text-amber-400 text-lg shrink-0">
+                  <span className="font-bold text-rose-400 text-lg shrink-0">
                     {item.price}
                   </span>
                 </div>
@@ -156,7 +156,7 @@ export function MenuPreview() {
 
               {item.popular && (
                 <div className="pt-2">
-                  <span className="inline-block text-[11px] font-semibold text-amber-400 bg-amber-400/10 px-2.5 py-0.5 rounded border border-amber-400/20 uppercase tracking-wide">
+                  <span className="inline-block text-[11px] font-semibold text-rose-400 bg-rose-400/10 px-2.5 py-0.5 rounded border border-rose-400/20 uppercase tracking-wide">
                     Chef&rsquo;s Favorite
                   </span>
                 </div>
