@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Monitor, Wifi, Coffee, Users, Shield, ArrowRight } from "lucide-react";
+import { Monitor, Wifi, Utensils, Shield, ArrowRight } from "lucide-react";
 
 export function Boardroom() {
   return (
@@ -24,8 +24,8 @@ export function Boardroom() {
           </h2>
           <p className="text-zinc-300 text-base sm:text-lg mt-4 leading-relaxed">
             Elevate your pitch, board meeting, or team strategy session. Fully
-            soundproofed rooms equipped with high-grade AV setup and full cafe
-            catering service directly to your table.
+            soundproofed rooms equipped with high-grade AV setup and full
+            cafeteria catering delivered directly to your table.
           </p>
         </div>
 
@@ -94,15 +94,15 @@ export function Boardroom() {
 
               <div className="flex items-start gap-3">
                 <div className="w-8 h-8 rounded-lg bg-rose-400/10 border border-rose-400/30 flex items-center justify-center text-rose-400 shrink-0">
-                  <Coffee className="w-4 h-4" />
+                  <Utensils className="w-4 h-4" />
                 </div>
                 <div>
                   <h4 className="text-sm font-semibold text-zinc-200">
                     Executive Catering Add-ons
                   </h4>
                   <p className="text-xs text-zinc-400">
-                    Unlimited pour-over coffee, tea, pastries, and lunch
-                    options.
+                    Breakfast platters, hot lunches, snacks, tea, and group
+                    meal packages.
                   </p>
                 </div>
               </div>

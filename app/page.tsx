@@ -6,8 +6,6 @@ import { MenuPreview } from "@/components/menu-previews";
 import { Promotions } from "@/components/promotions";
 import { TableReservations } from "@/components/table-reservations";
 import { Testimonials } from "@/components/testimonials";
-import Image from "next/image";
-
 export default function Home() {
   return (
     <main>

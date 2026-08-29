@@ -26,8 +26,8 @@ export function TableReservations() {
               Reserve Your <span className="text-rose-400">Table</span>
             </h2>
             <p className="text-zinc-400 text-sm sm:text-base mt-2">
-              For dining, casual catchups, or light meetings. Confirmation is
-              instant.
+              Save a cafeteria table for team lunches, group meals, or casual
+              catchups. Confirmation is instant.
             </p>
           </div>
 

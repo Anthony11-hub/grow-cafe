@@ -4,24 +4,24 @@ import React from "react";
 
 const galleryImages = [
   {
-    url: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80",
-    title: "Interior Ambience",
-    tag: "Atmosphere",
+    url: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80",
+    title: "Fresh Daily Selection",
+    tag: "Daily Menu",
   },
   {
-    url: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
-    title: "Pour-Over Precision",
-    tag: "Barista",
+    url: "https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=800&q=80",
+    title: "Ready-to-Serve Favorites",
+    tag: "Serving Counter",
   },
   {
-    url: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80",
-    title: "Artisanal Pizza & Mains",
-    tag: "Culinary",
+    url: "https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=800&q=80",
+    title: "Balanced Bowls & Mains",
+    tag: "Fresh Meals",
   },
   {
     url: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
-    title: "Private Work Lounge",
-    tag: "Workspace",
+    title: "Flexible Group Seating",
+    tag: "Dining Space",
   },
 ];
 
@@ -34,7 +34,7 @@ export function Gallery() {
             Visual Experience
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-100">
-            Inside <span className="text-rose-400">Café</span>
+            Inside the <span className="text-rose-400">Cafeteria</span>
           </h2>
         </div>
 

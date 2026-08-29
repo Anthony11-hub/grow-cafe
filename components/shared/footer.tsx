@@ -27,12 +27,12 @@ export function Footer() {
                 C
               </div>
               <span className="text-xl font-bold tracking-tight text-zinc-100">
-                Café
+                Cafeteria
               </span>
             </Link>
             <p className="text-zinc-400 text-xs leading-relaxed">
-              Premium artisanal coffee, executive dining, and state-of-the-art
-              boardroom suites designed for seamless productivity.
+              Fresh everyday meals, flexible group seating, takeaway service,
+              and boardroom suites for productive teams.
             </p>
             <div className="flex space-x-3 pt-2">
               {/* Instagram */}
@@ -153,7 +153,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-rose-400 shrink-0" />
-                <span>concierge@cafe.com</span>
+                <span>hello@cafeteria.com</span>
               </li>
               <li className="pt-1 text-zinc-500">
                 Mon - Sat: 7:00 AM - 10:00 PM
@@ -184,7 +184,7 @@ export function Footer() {
 
         {/* Bottom Credits */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-500">
-          <p>© 2026 Café. All rights reserved.</p>
+          <p>© 2026 Cafeteria. All rights reserved.</p>
           <div className="flex space-x-6">
             <a href="#" className="hover:text-zinc-400 transition-colors">
               Privacy Policy

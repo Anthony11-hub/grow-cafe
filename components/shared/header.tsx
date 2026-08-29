@@ -29,10 +29,10 @@ export function Header() {
           </div>
           <div className="flex flex-col">
             <span className="text-xl font-bold text-zinc-100 tracking-tight leading-none group-hover:text-rose-400 transition-colors">
-              Café
+              Cafeteria
             </span>
             <span className="text-[10px] uppercase tracking-widest text-rose-400/90 font-medium">
-              Bistro & Executive Lounge
+              Fresh Food & Shared Spaces
             </span>
           </div>
         </Link>

@@ -1,67 +1,69 @@
 "use client";
 
 import React, { useState } from "react";
-import { ArrowRight, ShoppingBag, Utensils, Coffee, Wine } from "lucide-react";
+import { ArrowRight, ShoppingBag, Utensils, Sunrise, Soup } from "lucide-react";
 
 interface MenuItem {
   name: string;
   description: string;
   price: string;
-  category: "coffee" | "mains" | "desserts";
+  category: "breakfast" | "hot-meals" | "grab-and-go";
   popular?: boolean;
 }
 
 const menuItems: MenuItem[] = [
   {
-    name: "Smoked Espresso Tonic",
+    name: "Full Breakfast Plate",
     description:
-      "Double shot single-origin espresso, artisanal tonic, orange peel, rosemary smoke infusion.",
-    price: "$7.50",
-    category: "coffee",
+      "Eggs, breakfast potatoes, grilled tomato, seasonal fruit, and your choice of toast.",
+    price: "$8.50",
+    category: "breakfast",
     popular: true,
   },
   {
-    name: "Salted Caramel Velvet Latte",
+    name: "Fruit & Granola Bowl",
     description:
-      "Micro-foamed oat milk, house-made caramel drizzle, pink Himalayan salt.",
-    price: "$6.50",
-    category: "coffee",
+      "Greek yogurt, house granola, banana, berries, toasted seeds, and honey.",
+    price: "$6.00",
+    category: "breakfast",
   },
   {
-    name: "Truffle Ribeye Sliders",
+    name: "Grilled Chicken Lunch Plate",
     description:
-      "Aged beef patties, black truffle aioli, caramelized onions, brioche bun.",
-    price: "$19.00",
-    category: "mains",
+      "Herb-grilled chicken, seasoned rice, market vegetables, and house sauce.",
+    price: "$12.00",
+    category: "hot-meals",
     popular: true,
   },
   {
-    name: "Pan-Seared Salmon Bowl",
+    name: "Vegetable Curry Bowl",
     description:
-      "Wild salmon, quinoa, avocado, pickled radish, roasted sesame dressing.",
-    price: "$22.00",
-    category: "mains",
-  },
-  {
-    name: "Dark Chocolate Fondant",
-    description:
-      "70% Valrhona dark chocolate molten center, vanilla bean gelato.",
-    price: "$11.00",
-    category: "desserts",
-    popular: true,
-  },
-  {
-    name: "Bourbon Vanilla Cheesecake",
-    description:
-      "New York style cheesecake, smoked bourbon glaze, fresh berry compote.",
+      "Slow-cooked seasonal vegetables, fragrant rice, fresh herbs, and flatbread.",
     price: "$10.00",
-    category: "desserts",
+    category: "hot-meals",
+  },
+  {
+    name: "Chicken Salad Wrap",
+    description:
+      "Grilled chicken, crisp greens, tomato, cucumber, and herb dressing in a soft wrap.",
+    price: "$8.00",
+    category: "grab-and-go",
+    popular: true,
+  },
+  {
+    name: "Fresh Snack Box",
+    description:
+      "Seasonal fruit, cheese, crackers, hummus, and crunchy vegetables packed to go.",
+    price: "$7.00",
+    category: "grab-and-go",
   },
 ];
 
 export function MenuPreview() {
-  const [activeTab, setActiveTab] = useState<"coffee" | "mains" | "desserts">(
-    "coffee",
+  const [activeTab, setActiveTab] = useState<
+    "breakfast" | "hot-meals" | "grab-and-go"
+  >(
+    "breakfast",
   );
 
   const filteredItems = menuItems.filter((item) => item.category === activeTab);
@@ -76,11 +78,11 @@ export function MenuPreview() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-600/10 border border-rose-400/30 text-rose-400 text-xs font-semibold tracking-wider uppercase mb-3">
-              Curated Menu
+              Today&rsquo;s Selection
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-100">
-              Crafted Flavors &{" "}
-              <span className="text-rose-400">Signature Beverages</span>
+              Fresh Choices for{" "}
+              <span className="text-rose-400">Every Part of the Day</span>
             </h2>
           </div>
 
@@ -89,7 +91,7 @@ export function MenuPreview() {
             className="inline-flex items-center gap-2 bg-rose-700 hover:bg-rose-600 text-white font-semibold px-5 py-2.5 rounded-lg transition-colors text-sm shrink-0 self-start md:self-auto"
           >
             <ShoppingBag className="w-4 h-4" />
-            Full Order Menu
+            View Full Menu
             <ArrowRight className="w-4 h-4" />
           </a>
         </div>
@@ -97,39 +99,39 @@ export function MenuPreview() {
         {/* Category Tabs */}
         <div className="flex space-x-2 border-b border-zinc-800 pb-4 mb-8 overflow-x-auto">
           <button
-            onClick={() => setActiveTab("coffee")}
+            onClick={() => setActiveTab("breakfast")}
             className={`flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm transition-all whitespace-nowrap ${
-              activeTab === "coffee"
+              activeTab === "breakfast"
                 ? "bg-rose-700 text-white shadow-md font-semibold"
                 : "text-zinc-400 hover:text-zinc-100 hover:bg-zinc-800"
             }`}
           >
-            <Coffee className="w-4 h-4" />
-            Coffee & Barista
+            <Sunrise className="w-4 h-4" />
+            Breakfast
           </button>
 
           <button
-            onClick={() => setActiveTab("mains")}
+            onClick={() => setActiveTab("hot-meals")}
             className={`flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm transition-all whitespace-nowrap ${
-              activeTab === "mains"
+              activeTab === "hot-meals"
                 ? "bg-rose-700 text-white shadow-md font-semibold"
                 : "text-zinc-400 hover:text-zinc-100 hover:bg-zinc-800"
             }`}
           >
             <Utensils className="w-4 h-4" />
-            Bistro Mains
+            Hot Meals
           </button>
 
           <button
-            onClick={() => setActiveTab("desserts")}
+            onClick={() => setActiveTab("grab-and-go")}
             className={`flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm transition-all whitespace-nowrap ${
-              activeTab === "desserts"
+              activeTab === "grab-and-go"
                 ? "bg-rose-700 text-white shadow-md font-semibold"
                 : "text-zinc-400 hover:text-zinc-100 hover:bg-zinc-800"
             }`}
           >
-            <Wine className="w-4 h-4" />
-            Desserts & Wine
+            <Soup className="w-4 h-4" />
+            Grab & Go
           </button>
         </div>
 
@@ -157,7 +159,7 @@ export function MenuPreview() {
               {item.popular && (
                 <div className="pt-2">
                   <span className="inline-block text-[11px] font-semibold text-rose-400 bg-rose-400/10 px-2.5 py-0.5 rounded border border-rose-400/20 uppercase tracking-wide">
-                    Chef&rsquo;s Favorite
+                    Cafeteria Favorite
                   </span>
                 </div>
               )}

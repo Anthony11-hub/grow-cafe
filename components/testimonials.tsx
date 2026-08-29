@@ -7,19 +7,19 @@ const reviews = [
   {
     name: "Alex Kibet",
     role: "Managing Partner, Apex Ventures",
-    text: "The boardroom suite was immaculate for our Q3 board meeting. Unbeatable privacy, fast fiber connection, and the pour-over coffee kept the team sharp all morning.",
+    text: "The boardroom suite worked perfectly for our Q3 meeting, and ordering lunch from the cafeteria kept the whole day running smoothly.",
     rating: 5,
   },
   {
     name: "Sarah Wanjiku",
     role: "Senior Product Designer",
-    text: "My favorite spot for hybrid work days. Quiet acoustic corners, stunning espresso, and a menu that actually delivers on high culinary standards.",
+    text: "My favorite place for hybrid work days. There is plenty of seating, the lunch selection changes regularly, and grabbing a quick meal is easy.",
     rating: 5,
   },
   {
     name: "David Ochieng",
     role: "Founder, TechBridge",
-    text: "Reserving a table online takes literally 10 seconds. We host all our high-profile client dinners here now—the truffle sliders are incredible.",
+    text: "Reserving a group table takes seconds. It is now our go-to place for team lunches because everyone can find something they enjoy.",
     rating: 5,
   },
 ];
@@ -37,7 +37,7 @@ export function Testimonials() {
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-100">
             Trusted by{" "}
-            <span className="text-rose-400">Executives & Foodies</span>
+            <span className="text-rose-400">Teams & Everyday Diners</span>
           </h2>
         </div>
 

@@ -13,16 +13,16 @@ export function Promotions() {
           </div>
           <div>
             <span className="font-bold text-sm tracking-tight block sm:inline">
-              Executive Happy Hour:
+              Friday Team Lunch:
             </span>{" "}
             <span className="text-sm font-medium">
-              30% off all Boardroom Suite bookings made for Fridays after 4 PM.
+              Save 20% on group meal packages for tables of eight or more.
             </span>
           </div>
         </div>
 
         <a
-          href="#boardroom"
+          href="#reserve"
           className="bg-zinc-950 hover:bg-zinc-900 text-rose-400 font-bold px-4 py-2 rounded-lg text-xs tracking-wider uppercase flex items-center gap-1.5 transition-colors shrink-0 shadow-md"
         >
           Claim Offer

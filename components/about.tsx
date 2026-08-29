@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Coffee, Sparkles, ShieldCheck } from "lucide-react";
+import { Utensils, Sparkles, ShieldCheck } from "lucide-react";
 
 export function About() {
   return (
@@ -15,8 +15,8 @@ export function About() {
           <div className="relative">
             <div className="relative h-[420px] rounded-2xl overflow-hidden border border-rose-600/20 shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=80"
-                alt="Café Ambience"
+                src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1000&q=80"
+                alt="Fresh cafeteria meal bowls"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent opacity-80" />
@@ -25,14 +25,14 @@ export function About() {
             {/* Floating Badge */}
             <div className="absolute -bottom-6 -right-2 sm:right-6 bg-zinc-900 border border-rose-400/30 p-4 rounded-xl shadow-xl flex items-center gap-3">
               <div className="w-10 h-10 rounded-lg bg-rose-400/10 border border-rose-400/40 flex items-center justify-center text-rose-400">
-                <Coffee className="w-5 h-5" />
+                <Utensils className="w-5 h-5" />
               </div>
               <div>
                 <p className="text-sm font-bold text-zinc-100">
-                  Artisanal Roasts
+                  Fresh Every Day
                 </p>
                 <p className="text-xs text-rose-400/90 font-medium">
-                  Single-Origin Arabica
+                  Breakfast, Lunch & Quick Bites
                 </p>
               </div>
             </div>
@@ -41,19 +41,18 @@ export function About() {
           {/* Text Content */}
           <div className="space-y-6">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-600/10 border border-rose-400/30 text-rose-400 text-xs font-semibold tracking-wider uppercase">
-              The Atmosphere
+              The Cafeteria
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-100">
-              Where Executive Polish Meets{" "}
-              <span className="text-rose-400">Warm Hospitality</span>.
+              Everyday Food Meets{" "}
+              <span className="text-rose-400">Comfortable Community</span>.
             </h2>
 
             <p className="text-zinc-300 leading-relaxed text-base sm:text-lg">
-              Designed for effortless transitions between early morning espresso
-              meetings, midday executive lunches, and quiet evening dining.
-              Every corner blends refined acoustic design, warm ambient
-              lighting, and rich culinary craft.
+              Designed for breakfast on the go, relaxed lunches, team meals,
+              and informal catchups. Choose from the daily serving counter,
+              settle into flexible seating, or take a freshly packed meal away.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
@@ -61,10 +60,10 @@ export function About() {
                 <Sparkles className="w-5 h-5 text-rose-400 shrink-0 mt-0.5" />
                 <div>
                   <h3 className="font-semibold text-zinc-100 text-sm">
-                    Refined Dining
+                    Daily Variety
                   </h3>
                   <p className="text-xs text-zinc-400 mt-0.5">
-                    Chef-curated bistro classics & fresh local fare.
+                    Rotating hot meals, salads, snacks, and local favorites.
                   </p>
                 </div>
               </div>
@@ -73,10 +72,10 @@ export function About() {
                 <ShieldCheck className="w-5 h-5 text-rose-400 shrink-0 mt-0.5" />
                 <div>
                   <h3 className="font-semibold text-zinc-100 text-sm">
-                    Business Ready
+                    Group Friendly
                   </h3>
                   <p className="text-xs text-zinc-400 mt-0.5">
-                    High-speed WiFi & private soundproof suites.
+                    Communal tables, WiFi, and reservable meeting suites.
                   </p>
                 </div>
               </div>

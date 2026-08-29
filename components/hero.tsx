@@ -22,7 +22,7 @@ export function Hero() {
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-40"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1600&q=80')",
+            "url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80')",
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-r from-zinc-950 via-zinc-950/85 to-zinc-950/40 z-0" />
@@ -32,18 +32,17 @@ export function Hero() {
         <div className="max-w-2xl space-y-6">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-rose-600/10 border border-rose-400/30 text-rose-400 text-xs font-semibold tracking-wider uppercase">
             <span className="w-2 h-2 rounded-full bg-rose-400 animate-pulse" />
-            Executive Dining & Workspaces
+            Fresh Meals, Flexible Seating & Workspaces
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-zinc-100 leading-tight">
-            A Table, a Meal, or a Boardroom—
-            <span className="block text-rose-400">Booked in Seconds.</span>
+            Your Everyday Cafeteria,
+            <span className="block text-rose-400">Made Better.</span>
           </h1>
 
           <p className="text-lg sm:text-xl text-zinc-300 font-normal leading-relaxed">
-            Experience exceptional artisanal cuisine, premium roasted coffee,
-            and private executive meeting spaces crafted for business and
-            leisure.
+            Enjoy fresh breakfast, lunch, quick bites, and flexible group
+            seating, with private meeting spaces available when work calls.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
