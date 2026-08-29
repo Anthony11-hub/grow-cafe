@@ -24,10 +24,10 @@ export function Footer() {
           <div className="space-y-4 md:col-span-1">
             <Link href="/" className="flex items-center space-x-3">
               <div className="w-9 h-9 rounded-full bg-rose-700 flex items-center justify-center text-white font-black text-lg">
-                C
+                N
               </div>
               <span className="text-xl font-bold tracking-tight text-zinc-100">
-                Cafeteria
+                Ngoo Sya Wendo Cafeteria
               </span>
             </Link>
             <p className="text-zinc-400 text-xs leading-relaxed">
@@ -184,7 +184,7 @@ export function Footer() {
 
         {/* Bottom Credits */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-500">
-          <p>© 2026 Cafeteria. All rights reserved.</p>
+          <p>© 2026 Ngoo Sya Wendo Cafeteria. All rights reserved.</p>
           <div className="flex space-x-6">
             <a href="#" className="hover:text-zinc-400 transition-colors">
               Privacy Policy

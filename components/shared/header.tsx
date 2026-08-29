@@ -25,11 +25,11 @@ export function Header() {
         {/* Brand Logo */}
         <Link href="/" className="flex items-center space-x-3 group">
           <div className="w-10 h-10 rounded-full bg-rose-700 flex items-center justify-center text-white font-black text-xl tracking-tighter shadow-lg group-hover:bg-rose-600 transition-colors">
-            C
+            N
           </div>
           <div className="flex flex-col">
             <span className="text-xl font-bold text-zinc-100 tracking-tight leading-none group-hover:text-rose-400 transition-colors">
-              Cafeteria
+              Ngoo Sya Wendo
             </span>
             <span className="text-[10px] uppercase tracking-widest text-rose-400/90 font-medium">
               Fresh Food & Shared Spaces

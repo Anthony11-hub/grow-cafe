@@ -18,9 +18,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Cafeteria | Fresh Food & Shared Spaces",
+  title: "Ngoo Sya Wendo Cafeteria | Fresh Food & Shared Spaces",
   description:
-    "Fresh daily meals, flexible cafeteria seating, takeaway service, and reservable meeting spaces.",
+    "Fresh daily meals, flexible seating, takeaway service, and reservable meeting spaces at Ngoo Sya Wendo Cafeteria.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

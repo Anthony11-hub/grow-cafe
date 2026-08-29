@@ -5,6 +5,11 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --color-rose-200: #f4c7c7;
+  --color-rose-400: #d16b6b;
+  --color-rose-600: #990f0f;
+  --color-rose-700: #800000;
+  --color-rose-900: #450000;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
